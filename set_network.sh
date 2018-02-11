@@ -3,13 +3,6 @@
 # importing script help_functions.sh (point is equals to => source)
 . ./help_functions.sh
 
-# declaring constants
-NETWORK_CONF_FILE=/etc/sysconfig/network-scripts/ifcfg-enp0s3
-PARAMS=./params
-POSTES=./postes
-HOSTS=/etc/hosts
-HOST_NAME="serveur"
-
 function set_network {
 	
 	echo $HOST_NAME > /etc/hostname

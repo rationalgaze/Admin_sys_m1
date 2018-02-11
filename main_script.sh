@@ -5,6 +5,13 @@ source ./help_functions.sh
 source ./set_network.sh
 source ./set_nfs.sh
 
+# declaring constants
+NETWORK_CONF_FILE=/etc/sysconfig/network-scripts/ifcfg-enp0s3
+PARAMS=./params
+POSTES=./postes
+HOSTS=/etc/hosts
+HOST_NAME="serveur"
+
 
 # function set_nis {
 #   echo
