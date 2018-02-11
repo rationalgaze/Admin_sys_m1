@@ -35,7 +35,7 @@ function exist() {
 
 # replace_line /etc/passwd "niko" "toto:1024:20"
 function replace_line() {
-  cp -f $1 $1.old 
+  cp -n $1 $1.old 
   if sed "\!$2! c $3" $1 > $1.new
   then
     mv -f $1.new $1
