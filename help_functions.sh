@@ -23,8 +23,8 @@ function restore_files() {
 }
 
 
-# utilisation de fonction if test `exist /etc/hosts server` == "0" ; then
-function exist() { # utilisation exist <path> [word] ex: exist /etc/hosts "saveur"
+# utilisation: exist <path> [word] ex: exist /etc/hosts "saveur"
+function exist() { 
   if grep -q "$2" "$1" #-q quiet
   then
     echo "0"
