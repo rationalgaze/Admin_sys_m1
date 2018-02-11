@@ -48,35 +48,3 @@ function verify_network {
 		fi
 	done
 }
-
-# function set_nfs {
-# 	echo
-# }
-
-# function verify_nfs {
-# 	echo
-# }
-
-# function set_nis {
-# 	echo
-# }
-
-# function verify_nis {
-# 	echo
-# }
-
-# function set_autofs {
-# 	echo
-# }
-
-# function verify_autofs {
-# 	echo
-# }
-
-# function set_iptables {
-# 	echo
-# }
-
-# function verify_iptables {
-# 	echo
-# }
