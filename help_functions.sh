@@ -1,15 +1,12 @@
 #! /bin/bash
 
-PARAMS="./params"
-POSTES="./postes"
-
 FILE_TO_SAVE=./FILE_TO_SAVE
 REP_ORIGINAL=./ORIGINAL_FILES/
 
 function save_files() {
   for file in `cat $FILE_TO_SAVE`
   do
-    if test -e ${REP_ORIGINAL}/`basename $file` 
+    if [ -e ${REP_ORIGINAL}/`basename $file` ]
     then
       echo "$file est déjà sauvegardé"
     else

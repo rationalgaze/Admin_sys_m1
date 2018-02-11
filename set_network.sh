@@ -22,7 +22,7 @@ function set_network {
 		then
 			echo "ce hoste déjà existe"
 		else
-			$(add_line "$HOSTS" "$line")
+			add_line "$HOSTS" "$line"
 		fi
 	done
 	
@@ -31,7 +31,7 @@ function set_network {
 			for f in `cat $PARAMS`
 			do
 				line=`echo $f | cut -f1 -d =`
-	 			$(replace_line $NETWORK_CONF_FILE $line $f)
+	 			replace_line $NETWORK_CONF_FILE $line $f
 			done
 		fi
 }
